@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f7d89fa73e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section id="login">
+            <div class="bannerText">
+                <div class="avatar">
+                    <img src="images/avatar.png" alt="">
+                </div>
+                <div class="bannerContent">
+                    <h2>WELCOME</h2>
+                    <!-- <form action=""> -->
+                        <div>
+                            <input type="text" name="" id="user" placeholder="User Name">
+                            <input type="password" name="" id="password" placeholder="******">
+                            <div class="forget">
+                                <a href="http://" target="_blank" rel="noopener noreferrer"><span>Forgot
+                                        Password?</span></a>
+                            </div>
+                            <a href="home.html">
+                                <button type="submit" class="btn" id="btn">Login</button>
+                            </a>
+                        </div>
+                    <!-- </form> -->
+
+                </div>
+            </div>
+            <div class="bannerImg">
+                <!-- <img src="images/lampshade.png" alt="">
+                <img src="images/shape1.png" alt=""> -->
+                <img src="images/Screenshot_12.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        document.getElementById("btn").addEventListener('click', function () {
+            const userEmail = document.getElementById("user").value;
+            const userPassword = document.getElementById("password").value;
+            if (userEmail == 'world' && userPassword == 'a') {
+                window.location.href = "home.html"
+            }
+        })
+
+    </script>
+</body>
+
+</html>
